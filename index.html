@@ -1,87 +1,112 @@
 <!DOCTYPE html>
-<html lang="en-US" class="hide-scroll">
+<html lang="en">
 <head>
-    <title>Responsive solutions HTML Template Live Demo</title>
-    <meta name="Keywords">
-    <meta name="Description">
-    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width">
-    <link href="//capp.nicepage.com/990ae0ff0b573e03cd910c2714f552cc13e82e47/main-libs.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans:200,300,400,700,800,900&amp;subset=latin" rel="preload" as="font">
-    <meta name="robots" content="noindex, nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Management</title>
     <style>
-        .dialog-wrapper {
-            display: none !important;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        .wrap, #main {
-            height: 100vh;
-            margin: 0 !important;
-        }
-        iframe {
-            display: none;
-        }
-        html, body {
-            height: 100%;
-        }
-        .page-preview {
-            border-radius: 0;
-            height: 100%;
-        }
-        .page-preview-header {
-            background: #f2f2f2;
-            border: none;
-            height: 70px;
-            position: relative;
-            text-align: center;
-        }
-        .page-preview-header > a {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 4px;
-        }
-        .page-preview-header > a:hover {
-            background: #e2f0fc;
-            text-decoration: none;
-        }
-        .page-preview-header > a.active {
-            background: #c9e4f9;
-        }
-        .page-preview-header > .close {
-            float: right;
-            margin-right: 10px;
-        }
-        .page-preview-body {
-            height: calc(100% - 70px);
-            overflow: hidden;
-            text-align: center;
-        }
-        .page-preview-body iframe {
-            border: none;
-            display: inline-block;
-            height: 100%;
-        }
-        .service {
-            background-size: cover;
-            background-position: center;
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            margin: 10px;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        .service:nth-child(1) {
-            background-image: url('https://placekitten.com/800/600');
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
         }
-        .service:nth-child(2) {
-            background-image: url('https://placekitten.com/800/700');
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
         }
-        .service:nth-child(3) {
-            background-image: url('https://placekitten.com/800/800');
+
+        .tagline {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1 1 calc(50% - 20px);
+            max-width: calc(50% - 20px);
+        }
+
+        .service h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .service {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="page-preview">
-        <div class="page-preview-body">
-            <iframe id="livePreviewFrame" src="https://website460597.nicepage.io/Page-2.html?version=47534682-0e46-43d9-9c3c-bcc57fd2794d" width="1057" height="640" style="width: 457px;"></iframe>
+    <div class="container">
+        <div class="logo">
+            <img src="image.png" alt="Logo">
+        </div>
+        <div class="tagline">
+            We'll help manage your business
+        </div>
+        <div class="description">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+        </div>
+        <div class="services">
+            <div class="service">
+                <h2>CONSULTATIONS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service">
+                <h2>STRATEGY</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service">
+                <h2>INVESTMENT</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service">
+                <h2>MARKETING</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service">
+                <h2>STARTUPS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
         </div>
     </div>
 </body>
