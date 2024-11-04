@@ -57,8 +57,12 @@
             text-align: center;
             flex: 1 1 calc(50% - 20px);
             max-width: calc(50% - 20px);
-            background-image: url(https://gsm-store.ru/upload/iblock/81d/yv8e86rdux6emd6lkbuid1558r51o9os.jpg);
+            background-image: url('https://gsm-store.ru/upload/iblock/81d/yv8e86rdux6emd6lkbuid1558r51o9os.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
+
         .service1 {
             background-color: #fff;
             padding: 20px;
@@ -67,8 +71,12 @@
             text-align: center;
             flex: 1 1 calc(50% - 20px);
             max-width: calc(50% - 20px);
-            background-image: url(https://static.eldorado.ru/img1/p/b/418754003.jpg/resize/180x180/);
+            background-image: url('https://static.eldorado.ru/img1/p/b/418754003.jpg/resize/180x180/');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
+
         .service2 {
             background-color: #fff;
             padding: 20px;
@@ -77,8 +85,12 @@
             text-align: center;
             flex: 1 1 calc(50% - 20px);
             max-width: calc(50% - 20px);
-            background-image: url(https://avatars.mds.yandex.net/get-mpic/5234050/img_id3738054083221097349.jpeg/orig);
+            background-image: url('https://avatars.mds.yandex.net/get-mpic/5234050/img_id3738054083221097349.jpeg/orig');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
+
         .service3 {
             background-color: #fff;
             padding: 20px;
@@ -87,8 +99,12 @@
             text-align: center;
             flex: 1 1 calc(50% - 20px);
             max-width: calc(50% - 20px);
-            background-image: url(https://gsm-store.ru/https://static.tildacdn.com/tild3234-3764-4537-b039-383163303134/photo.png/iblock/81d/yv8e86rdux6emd6lkbuid1558r51o9os.jpg);
+            background-image: url('https://static.tildacdn.com/tild3234-3764-4537-b039-383163303134/photo.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
+
         .service4 {
             background-color: #fff;
             padding: 20px;
@@ -97,7 +113,10 @@
             text-align: center;
             flex: 1 1 calc(50% - 20px);
             max-width: calc(50% - 20px);
-            background-image: url(https://gsm-store.ru/upload/iblock/81d/yv8e86rdux6emd6lkbuid1558r51o9os.jpg);
+            background-image: url('https://gsm-store.ru/upload/iblock/81d/yv8e86rdux6emd6lkbuid1558r51o9os.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .service h2 {
@@ -110,25 +129,46 @@
         }
 
         @media (max-width: 768px) {
-            .service {
+            .service, .service1, .service2, .service3, .service4 {
                 flex: 1 1 100%;
                 max-width: 100%;
             }
-        }   
-        footer{
-            margin: 0 auto;
-            height: 110px;
+
+            .logo {
+                width: 20%;
+            }
+
+            .tagline {
+                font-size: 20px;
+            }
+
+            .description {
+                font-size: 14px;
+            }
+
+            footer {
+                max-width: 100%;
+                height: auto;
+                padding: 10px;
+            }
+        }
+
+        footer {
+            margin: 20px auto 0;
+            padding: 20px;
             background-color: gray;
             border-radius: 10px;
-            max-width: calc(50% - 20px);
-        }
-        .sss{
             text-align: center;
-            color: #fff;
         }
-        .sss1{
-            text-align: center;
+
+        .sss, .sss1 {
             color: #fff;
+            margin: 10px 0;
+        }
+
+        .sss1 a {
+            color: #fff;
+            text-decoration: none;
         }
     </style>
 </head>
